@@ -1,0 +1,99 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html,body
+{
+    scroll-behavior: smooth;
+}
+.heading
+{
+    display: flex;
+    background-color: grey;
+    justify-content: space-between;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+.heading p
+{
+    padding: 15px 10px 15px 15px;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+#toggle-menu,.menu
+{
+    display: none;
+}
+.menu-heading
+{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#chicken,#beef,#sushi
+{
+    background-color: gray;
+    margin: 20px;
+    border: 2px solid black;
+    font-size: 20px;
+    padding: 10px;
+    text-align: justify;
+}
+h3
+{
+    text-align: center;
+}
+.for
+{
+    display: none;
+}
+@media (max-width:768px)
+{
+    html,body
+    {
+        scroll-behavior: smooth;
+    }
+    #toggle-menu
+    {
+        display: none;
+        position: absolute;
+        top: 30px;
+        right: 10px;
+    }
+    .menu
+    {
+        display: none;
+    }
+    .menu li
+    {
+        display: block;
+        background-color: grey;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+        border-bottom: 2px solid black;
+    }
+    .menu li a
+    {
+        color: aliceblue;
+        font-family:  sans-serif;
+        text-decoration: none;
+        padding:10px 10px 10px 10px;
+    }
+    #toggle-menu:checked ~ .menu
+    {
+        display: block;
+    }
+    .for
+    {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 10px;
+        cursor: pointer;
+    }
+}
